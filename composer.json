@@ -1,5 +1,5 @@
 {
-    "name": "arthurkushman/php-wss",
+    "name": "horror/php-wss",
     "description": "Web-socket server/client with URI parse and multi-process support",
     "keywords": [
         "web-sockets",
