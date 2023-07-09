@@ -165,7 +165,7 @@ class WscMain implements WscCommonsContract
             STREAM_CLIENT_CONNECT,
             $this->getStreamContext()
         );
-        $write = "CONNECT {$this->config->getProxyIp()}:{$this->config->getProxyPort()} HTTP/1.1\r\n";
+        $write = "CONNECT {$this->config->getHost()} HTTP/1.1\r\n";
         $auth = $this->config->getProxyAuth();
         if ($auth !== NULL) {
             $write .= "Proxy-Authorization: Basic {$auth}\r\n";
